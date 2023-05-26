@@ -74,6 +74,7 @@ const addTodoToDOM = (data, isNew) => {
   const thCheckbox = document.createElement("td");
   const inputCheckbox = document.createElement("input");
   inputCheckbox.setAttribute("type", "checkbox");
+  inputCheckbox.checked = data.completed ? true : false;
  
   //lägger på attribut för att det ska bli en checkbox.
   //alltså <input type="checkbox">
@@ -101,7 +102,7 @@ const addTodoToDOM = (data, isNew) => {
 const inputChange = async (e, thStatus, id) => {
   //Vi kollar om boxen är checkad, för att kunna avgöra som vi ska
   
-  const data = await updateCompleted("PUT", e.target.checked, 1, `${id - 1}`);
+  const data = await updateCompleted("PUT", e.target.checked, 1, `${id}`);
   //med resultat vi får tillbaka kan vi sedan kolla om data.checked är avklarat.
 
   thStatus.innerText = data.completed ? "Avklarad" : "Ej avklarad";
@@ -109,7 +110,7 @@ const inputChange = async (e, thStatus, id) => {
 
 //request för att göra en delete.
 const removeFromList = async (e, li, id) => {
-  const data = await fetchData("DELETE", null, null, 1, `/${id - 1}`);
+  const data = await fetchData("DELETE", null, null, 1, `/${id}`);
   li.remove();
 };
 

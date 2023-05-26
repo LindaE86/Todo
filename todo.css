@@ -1,7 +1,24 @@
+.start {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-control {
+    width: 40%;
+}
+
 .content-tabel {
     border-collapse: collapse;
     margin: 25px 0;
-    min-width: 300px;
+    max-width: 80%;
     font-size: 0,9em;
     text-align: center;
     border-radius: 5px 5px 0 0;
@@ -21,7 +38,7 @@
 
 .content-tabel th,
 .content-tabel td {
-    padding: 12px 15px;
+    padding: 10px 15px;
     border-bottom: 2px solid #000000;
 }
 
@@ -29,13 +46,10 @@
     background-color: #867abe;
 }
 
-.content-tabel tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
-}
-
 .button1 {
     background-color: #867abe;
     color: #000000;
+    font-weight: bold;
 }
 
  .button {
@@ -44,6 +58,7 @@
     font-weight: bold;
 }
 
-h4 {
+h1 {
     font-weight: bold;  
+    text-align: center;
 }
