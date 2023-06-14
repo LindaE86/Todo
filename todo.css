@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .form-control {
     width: 40%;
 }
@@ -19,14 +20,15 @@
     border-collapse: collapse;
     margin: 25px 0;
     max-width: 80%;
-    font-size: 0,9em;
+    font-size: 0, 9em;
     text-align: center;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0,15);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0, 15);
 }
+
 .content-tabel thead tr {
-    background-color:#605497;
+    background-color: #605497;
     color: black;
     text-align: center;
     font-weight: bold;
@@ -52,13 +54,13 @@
     font-weight: bold;
 }
 
- .button {
-    background-color:#605497;
+.button {
+    background-color: #605497;
     color: #000000;
     font-weight: bold;
 }
 
 h1 {
-    font-weight: bold;  
+    font-weight: bold;
     text-align: center;
 }

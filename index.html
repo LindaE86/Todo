@@ -1,36 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<title>Todo-app</title>
-<meta name="description" content="Sida">
-<meta name="keywords" content="html tutorial template">
-<link rel="stylesheet" href="todo.css">
-</head>
-<body>
+  <head>
+    <title>Todo-app</title>
+    <meta name="description" content="Sida" />
+    <meta name="keywords" content="html tutorial template" />
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body>
+    <h1>Min Todo-app</h1>
 
+    <div class="start">
+      <input
+        type="text"
+        class="form-control"
+        id="todoInput"
+        name="todo"
+        placeholder="Lägg till en todo"
+      />
+      <button class="button1" id="skicka">Lägg till todo</button>
+    </div>
 
-<h1> Min Todo-app</h1>
-
-<div class="start">
-    <input type="text" class="form-control" id="todoInput" name="todo" placeholder="Lägg till en todo">
-    <button class="button1" id="skicka">Lägg till todo</button>
-</div>
-
-    <div class="container">   
-    <table class="content-tabel">
-    <thead>
-        <tr>
+    <div class="container">
+      <table class="content-tabel">
+        <thead>
+          <tr>
             <th scope="col">#</th>
             <th scope="col">Todo</th>
             <th scope="col">Status</th>
             <th scope="col">Klarmarkera</th>
             <th scope="col">Åtgärd</th>
-        </tr>
-    </thead>
-    <tbody id="tbody">
-    </tbody>
-</table>
-</div>
-</body>
-<script src="todo.js"></script>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </body>
+  <script src="todo.js"></script>
 </html>
